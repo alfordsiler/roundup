@@ -22,6 +22,7 @@
         console.log('Token:', res.data.token);
         $location.path('/');
         console.log('Auth', Auth.currentUser());
+        res.redirect('/');
       }, function error(res) {
         Alerts.add('danger', 'Incorrect email/password');
         console.log('incorrect email pw');
