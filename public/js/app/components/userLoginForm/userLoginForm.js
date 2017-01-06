@@ -20,7 +20,6 @@
         Alerts.add('success', 'Logged in!');
         $rootScope.$broadcast('loggedIn');
         console.log('Token:', res.data.token);
-        $location.path('/');
         console.log('Auth', Auth.currentUser());
         window.location.reload(true);
       }, function error(res) {
